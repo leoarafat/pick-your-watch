@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
-import { iCart } from '@/types/cartInterface';
+import { iCart } from '@/types/Interfaces';
 import { IProduct } from '@/types/globalTypes';
 import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';

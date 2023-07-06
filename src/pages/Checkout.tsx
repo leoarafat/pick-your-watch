@@ -12,7 +12,7 @@ import { useState } from 'react';
 export default function Checkout() {
   const [scheduled, setScheduled] = useState<boolean>(false);
 
-  const { products } = useAppSelector((state) => state.cart);
+  const { products, total } = useAppSelector((state) => state.cart);
 
   return (
     <div className="flex justify-center items-center h-[calc(100vh-80px)] gap-10 text-primary">
@@ -125,7 +125,7 @@ export default function Checkout() {
             </div>
             <div className="flex justify-between text-xl font-bold">
               <p>Total</p>
-              <p>81.95$</p>
+              <p>{total}$</p>
             </div>
             <Button className="w-full">Checkout</Button>
           </div>
